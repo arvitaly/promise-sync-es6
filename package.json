@@ -1,0 +1,25 @@
+{
+  "name": "promise-sync-es6",
+  "version": "0.0.1",
+  "description": "ES6 promise implementation for sync testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest || exit(1)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvitaly/promise-sync-es6.git"
+  },
+  "keywords": [
+    "es6",
+    "promise",
+    "mock",
+    "sync"
+  ],
+  "author": "arvitaly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvitaly/promise-sync-es6/issues"
+  },
+  "homepage": "https://github.com/arvitaly/promise-sync-es6#readme"
+}
