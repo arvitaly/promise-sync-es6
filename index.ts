@@ -1,2 +1,3 @@
-﻿import { Promise } from './lib/Promise';
-export default Promise;
+﻿import { Promise as PromiseReal } from './lib/Promise';
+export default PromiseReal;
+export var Promise = PromiseReal;

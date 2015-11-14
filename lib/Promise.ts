@@ -55,7 +55,7 @@
             return false;
         });
     }
-    then(onfulfill: (value: V) => any, onReject?: PromiseSyncES6.IRejectedCallback) {
+    then(onfulfill: (value: V) => any, onReject?: (reason) => any) {
         var fulfill;
         var reject;
         var promise = new Promise((fulfill_, reject_) => {
@@ -89,7 +89,7 @@
         }
         return promise;
     }
-    catch(onReject: PromiseSyncES6.IRejectedCallback) {
+    catch(onReject: (reason) => any) {
         if (this.state === "rejected" && onReject) {
             try {
                 return Promise.resolve(onReject(this.reason));

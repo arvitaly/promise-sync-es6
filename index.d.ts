@@ -1,11 +1,4 @@
-﻿declare module PromiseSyncES6 {
-    interface IExecutor {
-        (resolve, reject?): any;
-    }
-    interface IFulfilledCallback {
-        (value): any;
-    }
-    interface IRejectedCallback {
-        (reason): any;
-    }
+﻿declare module "promise-sync-es6" {
+    export var Promise: any;
+    export default Promise;
 }
