@@ -82,7 +82,7 @@
         }
         if (this.state === "rejected" && onReject) {
             try {
-                return Promise.resolve(onReject(this.value));
+                return Promise.resolve(onReject(this.reason));
             } catch (e) {
                 return Promise.reject(e);
             }

@@ -133,6 +133,20 @@ describe("Promise", function () {
         });
         expect(valueCheck).toBe(value1 + value2);
     });
+    it("Throw in then and catch in onReject", function () {
+        var promise1 = new Promise_1.Promise(function (resolve, reject) {
+            resolve();
+        });
+        var error = "err1", error1;
+        var promise2 = promise1.then(function () {
+            throw error;
+        });
+        promise2.then(function () {
+        }, function (err) {
+            error1 = err;
+        });
+        expect(error1).toBe(error);
+    });
     it("Reject chain", function () {
         var reason = "err", reject1, reason1;
         var promise = new Promise_1.Promise(function (resolve, reject) {

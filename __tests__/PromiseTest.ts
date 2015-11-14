@@ -134,6 +134,21 @@ describe("Promise", () => {
         });
         expect(valueCheck).toBe(value1 + value2);
     });
+    it("Throw in then and catch in onReject", () => {
+        var promise1 = new Promise((resolve, reject) => {
+            resolve();
+        });
+        var error = "err1", error1;
+        var promise2 = promise1.then(() => {
+            throw error;
+        });
+        promise2.then(() => {
+
+        }, (err) => {
+            error1 = err;
+        });
+        expect(error1).toBe(error);
+    });
     it("Reject chain", () => {
         var reason = "err", reject1, reason1;
         var promise = new Promise((resolve, reject) => {
