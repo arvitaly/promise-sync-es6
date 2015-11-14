@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/arvitaly/promise-sync-es6/issues"
   },
-  "homepage": "https://github.com/arvitaly/promise-sync-es6#readme"
+  "homepage": "https://github.com/arvitaly/promise-sync-es6#readme",
+  "jest":{"verbose":true}
 }
