@@ -1,4 +1,6 @@
 # promise-sync-es6
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/arvitaly/promise-sync-es6.svg)](https://greenkeeper.io/)
 ES6 promise implementation for sync testing
 Warning: Promise.race not implemented
 
