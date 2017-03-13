@@ -28,6 +28,6 @@
     "coveralls": "^2.11.12",
     "fixture2": "0.0.3",
     "istanbul": "^0.4.5",
-    "jasmine": "2.4.1"
+    "jasmine": "2.5.3"
   }
 }
